@@ -12,6 +12,8 @@ public class Car {
         this.age = age;
     }
 
+
+
     public String getColor() {
         return color;
     }
@@ -23,6 +25,8 @@ public class Car {
     public String getModel() {
         return model;
     }
+
+
 
     public void setModel(String model) {
         this.model = model;

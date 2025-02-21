@@ -13,7 +13,9 @@ import org.thymeleaf.spring6.view.ThymeleafViewResolver;
 
 
 @Configuration
+
 @EnableWebMvc
+
 @ComponentScan("web")
 public class WebConfig implements WebMvcConfigurer {
 
@@ -33,6 +35,8 @@ public class WebConfig implements WebMvcConfigurer {
         return templateResolver;
     }
 
+
+
     @Bean
     public SpringTemplateEngine templateEngine() {
         SpringTemplateEngine templateEngine = new SpringTemplateEngine();
@@ -40,8 +44,6 @@ public class WebConfig implements WebMvcConfigurer {
         templateEngine.setEnableSpringELCompiler(true);
         return templateEngine;
     }
-
-
     @Override
     public void configureViewResolvers(ViewResolverRegistry registry) {
         ThymeleafViewResolver resolver = new ThymeleafViewResolver();
