@@ -9,6 +9,8 @@ import java.util.List;
 @Service
 public class CarService {
 
+
+
     private List<Car> cars;
     public CarService() {
         cars  = new ArrayList<>();
@@ -17,6 +19,8 @@ public class CarService {
         cars.add(new Car("Lada", "black", 2012));
         cars.add(new Car("BMW", "blue", 2024));
         cars.add(new Car("Mercedes", "red", 1998));
+
+
     }
 
     public List<Car> getCars(int count) {
